@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- Not important but represents the current version of HTML  - HTML5 -->
+<html lang="en"> <!-- It is root element of doc , shows the starting point of doc  -->
+
+<head>
+    <!-- It is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. Metadata is not displayed. -->
+    <meta charset="UTF-8">
+    <!-- It specifies the character encoding for the HTML document. UTF-8 is a character encoding capable of encoding all possible characters (called code points) in Unicode. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- It is used to specify the compatibility mode for Internet Explorer. The content="IE=edge" part tells IE to use the latest rendering engine available, rather than falling back to an older version. -->
+    <meta name="description" content="First webpage after joing jspiders">
+    <!-- It provides a brief description of the webpage's content. This description is often used by search engines in their search results. -->
+    <meta name="keywords" content="HTML, sample, document, example">
+    <!-- It specifies a list of keywords relevant to the webpage's content. These keywords can help search engines understand the topic of the page, although their importance for SEO has decreased over time. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- It is used to control the layout on mobile browsers. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+    <title>Document</title>
+    <!-- It defines the title of the document, which is shown in the browser's title bar or tab. -->
+    <link rel="icon"
+        href="data:image/png;base64,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">
+    <!-- It is used to link an external CSS file to the HTML document. The rel attribute specifies the relationship between the current document and the linked document, which is "stylesheet" in this case. The href attribute specifies the path to the CSS file. -->
+    <style> </style> <!-- It is used to define internal CSS styles for the HTML document. -->
+    <script></script><!--This tag is use to link the external script file such as javascript -->
+
+</head>
+
+<body>
+    <!-- It is the main content area of the HTML document. All visible content, such as text, images, links, and other elements, should be placed within the <body> tag. -->
+    <p>Date : 20/08/2026</p>
+</body>
+
+</html>
