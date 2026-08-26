@@ -21,5 +21,22 @@
     >
       Video File is not supported
     </video>
+
+    <audio
+      src="./assets/audio/sigmamusicart-no-copyright-music-537751.mp3"
+      controls
+      loop
+      muted
+    ></audio>
+
+    <script>
+        const vid = document.querySelector('video')
+        vid.onmouseenter = ()=>{
+           vid.play()
+        }
+        vid.onmouseleave = ()=> {
+            vid.pause()
+        }
+    </script>
   </body>
 </html>
