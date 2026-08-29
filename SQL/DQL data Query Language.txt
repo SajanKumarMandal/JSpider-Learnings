@@ -1,0 +1,76 @@
+DQL(data Query Language) :- Retreive Data 
+
+DQL is a type of sql language used to retrieve the data .
+Select * /distinct  / expression alias 
+
+data retrieval can be done in three ways 
+
+------------------------------------------------------------------------------------------------
+
+There are Different ways to retrieve data 
+
+1. Projection :- using projection we retrieve the data from columns .
+syntax :- SELECT DISTINCT Country FROM Customers;
+
+Q. find all the details of the table emp 
+
+2. selection :- 
+3. Joins 
+
+
+
+Distinct :- is a sql clause use to return distinct values .
+Syntax : SQL > SELECT DISTINCT Country FROM Customers;
+
+Q. Display distinct salary .
+Q.find distinct department no .
+Q. find the distinct job .
+
+------------------------------------------------------------------------------------------------
+
+Expression :- is a combination of operators and operands .
+ex : a+b+c
+
+Q.Find the employee name , salary with bonus of 500.
+Q. display employee name , annual salary .
+Q. find employee name , half term salary .
+Q. find employee name , quater salary .
+Q. find employee  name , salary with increment of 10% .
+Q. display employee name , annual salary with increment of 20% .
+Q. find the employee name , annual salary with decrement of 90% .
+Q. write a query to display salary * 12 as a annual salary .
+
+------------------------------------------------------------------------------------------------
+
+Alias :- is a alternative name given to a existing column or expression .
+Syntax :
+SELECT column_name AS alias_name
+FROM table_name;
+
+Q. Write a query to alias job as designation .
+Q. Write a query to alias Ename as a Pobstar.
+
+------------------------------------------------------------------------------------------------
+
+Selction :- is the way of retrieving the data which is present in row and columns .
+Syntax : select */.... from table_name where cond...;
+
+Order of execution -
+from - it will check wether table is present 
+where - used to filter table records and we can write multiple filter condition .
+In a Query only 1 where clause is allowed
+
+select - select and display the data 
+
+Q.Find emp details where emp are working in the deptno 20
+Q.Find emp details where jon is salesman 
+Q.find emp details where ename is king 
+Q.find emp details except manager
+Q.find emp details except deptno 20
+Q.find emp details where ename is KING,SMITH,TURNER
+Q.findemp details where deptno is 10,20
+Q.find emp details where job is salesman , clerk 
+Q.find emp details where deptno is 10 and earning sal > 1200
+Q.find emp details where job is salesman and working in the deptno 30
+Q.find emp details except employee king
+Q.find emp details where deptno is 10,30 and job is manager , salesman , clerk and earning sal > 1000 and less than 3000.
