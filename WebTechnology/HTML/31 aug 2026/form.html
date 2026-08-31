@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <!--    Form are use to collect data from the user
+            Types of Data : Text , password , numbers , email , date , time , url , files , image , color 
+
+    -->
+    <form action="" method="post">
+      <!--action attribute : The URI of a program that processes the form information. This value can be overridden by a formaction attribute on a <button> or <input> element.
+    -->
+      <!-- form element  -->
+      <!-- 1.input 
+       2.label-->
+      <!-- readonly
+        disabled -->
+      <label for="Name">Enter Your Name :</label>
+      <input
+        type=""
+        id="Name"
+        placeholder="Enter full Name"
+        required
+        autofocus
+      />
+      <br />
+      <label for="password">Enter Password</label>
+      <input type="password" value="" id="password" />
+      <br />
+      <label for="date">Date</label>
+      <input type="date" value="" id="date" />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+      <br />
+      <label for="image">Choose Image</label>
+      <input type="image" src="image" />
+    </form>
+  </body>
+</html>
