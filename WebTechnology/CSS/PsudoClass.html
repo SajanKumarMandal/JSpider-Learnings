@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Pseudo-class :
+    -> pseudo classes are used to change the state of the whole HTML element .
+    -> can change the state of elements on the basis of link availability , user interaction  position of element on the DOM and more.
+    -> Syntax :- 
+        selector : pseudo-class {
+            css prop 
+        }
+
+    -> tYPES :
+        1. LINKS : TO CHANGE THE state of unvisited links on the web page .
+        2. visited : to change the status of t visited links .
+        3. active : to change the status of active links ( when user click and hold on link )
+        4. hover : change the state of HTMl element , when user takes cursor over it .
+        5. focus : to change the state of HTML element (most likely inputs) when element gets focus .     
+    -->
+
+    <style>
+      .all-links {
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 40px;
+      }
+
+      .all-links > a:links {
+        color: red;
+      }
+
+      .all-links > a:visited {
+        color: green;
+      }
+
+      .all-links > a:active {
+        color: yellow;
+      }
+
+      button {
+        height: 45px;
+        width: 250px;
+        border: none;
+        background-color: orangered;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 654) inset;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      buttton:active {
+        background-color: green;
+        transform: scale(0.95);
+        transition: all 0.1s linear ;
+      }
+
+      input:hover {
+        border: 2px limegreen solid;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px 5px rgba(0,255, 0, 0.853);
+      }
+
+    </style>
+
+    <div class="all-links">
+      <a href="https://www.google.com">google</a> <br/>
+      <a href="https://www.facebook.com">facebook</a> <br/>
+      <a href="https://www.instagram.com">instagram</a> <br/>
+      <a href="https://www.snapchat.com">snapChat</a> <br/>
+      <a href="https://www.linkedin.com">LinkedIn</a> <br/>
+      <a href="https://www.github.com">github</a> <br/>
+      <a href="https://www.youtube.com">Youtube</a> <br/>
+      <a href="https://www.x.com">X</a> <br/>
+    </div>
+
+    <button>Click Here</button>
+
+    <input type="text">      
+    
+  </body>
+</html>
