@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image</title>
+    <style>
+      #Def{
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        background-color: green;
+      }
+    </style>
   </head>
-  <body>
+  <body align="centre">
     <!-- 
     TO insert Image we call <img> tag 
      It is unpaired , Void element 
@@ -24,7 +31,7 @@
     <img
       src="https://www.gstatic.com/webp/gallery/5.webp"
       alt="Image"
-      height="20%"
+      width="70%"
       style="object-fit: cover"
     />
     <!-- Insert Image by Path  -->
@@ -34,5 +41,39 @@
       height="20%"
       style="object-fit: cover"
     />
+    <hr />
+    <p id="Def">picture tag is use to insert image according to screen size</p>
+    <picture>
+      <!-- Mobile Devices -->
+      <source
+        media="(max-width: 470px )"
+        srcset="
+          https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+        "
+      />
+
+      <!--  Tablet -->
+      <source
+        media="(max-width: 920px)"
+        srcset="
+          https://5.imimg.com/data5/SELLER/Default/2023/12/372325508/ZZ/TZ/XX/180833002/tab-m10-25-65cms-10-1-4gb-64gb-storm-grey.png
+        "
+      />
+
+      <!-- Laptop -->
+      <source
+        media="(max-width:1200px)"
+        srcset="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaX7ER2xYQ12S2S-sjqnv430kIZoVbJYK6zHvh1llB9w&s
+        "
+      />
+
+      <!-- Default -->
+      <img
+        src="https://images.unsplash.com/flagged/photo-1574164908900-6275ca361157?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Default Image"
+        width="80%"
+      />
+    </picture>
   </body>
 </html>
